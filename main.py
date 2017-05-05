@@ -1,13 +1,14 @@
+from generador import Generador
 import cherrypy,os
 
 
 class goodAndDevil(object):
     @cherrypy.expose
     def index(self):
-        return """
-<!DOCTYPE html>
-<html lang="en">
-<head>
+		html = '''
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,9 +19,9 @@ class goodAndDevil(object):
     <link href="static/css/stylish-portfolio.css" rel="stylesheet">
     <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-</head>
+	</head>
 
-<body>
+	<body>
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -44,7 +45,9 @@ class goodAndDevil(object):
         </div>
     </header>
 
-        <!-- About -->
+        
+	'''
+        html1 = """<!-- About -->
         <section id="about" class="about">
             <div class="container">
                 <div class="row">
@@ -62,25 +65,25 @@ class goodAndDevil(object):
 
 
     <!-- jQuery -->
-<script src="static/js/jquery.js"></script>
+	<script src="static/js/jquery.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="static/js/bootstrap.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="static/js/bootstrap.min.js"></script>
 
-<!-- Custom Theme JavaScript -->
-<script>
-// Closes the sidebar menu
-$("#menu-close").click(function(e) {
+	<!-- Custom Theme JavaScript -->
+	<script>
+	// Closes the sidebar menu
+	$("#menu-close").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
-});
-// Opens the sidebar menu
-$("#menu-toggle").click(function(e) {
+	});
+	// Opens the sidebar menu
+	$("#menu-toggle").click(function(e) {
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-});
-// Scrolls to the selected menu item on the page
-$(function() {
+		$("#sidebar-wrapper").toggleClass("active");
+	});
+	// Scrolls to the selected menu item on the page
+	$(function() {
     $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -93,10 +96,10 @@ $(function() {
             }
         }
     });
-});
-//#to-top button appears after scrolling
-var fixed = false;
-$(document).scroll(function() {
+	});
+	//#to-top button appears after scrolling
+	var fixed = false;
+	$(document).scroll(function() {
     if ($(this).scrollTop() > 250) {
         if (!fixed) {
             fixed = true;
@@ -118,17 +121,17 @@ $(document).scroll(function() {
             });
         }
     }
-});
-// Disable Google Maps scrolling
-// See http://stackoverflow.com/a/25904582/1607849
-// Disable scroll zooming and bind back the click event
-var onMapMouseleaveHandler = function(event) {
+	});
+	// Disable Google Maps scrolling
+	// See http://stackoverflow.com/a/25904582/1607849
+	// Disable scroll zooming and bind back the click event
+	var onMapMouseleaveHandler = function(event) {
     var that = $(this);
     that.on('click', onMapClickHandler);
     that.off('mouseleave', onMapMouseleaveHandler);
     that.find('iframe').css("pointer-events", "none");
-}
-var onMapClickHandler = function(event) {
+	}
+	var onMapClickHandler = function(event) {
         var that = $(this);
         // Disable the click handler until the user leaves the map area
         that.off('click', onMapClickHandler);
@@ -137,16 +140,19 @@ var onMapClickHandler = function(event) {
         // Handle the mouse leave event
         that.on('mouseleave', onMapMouseleaveHandler);
     }
-    // Enable map zooming with mouse scroll when the user clicks the map
-$('.map').on('click', onMapClickHandler);
-</script>
+		// Enable map zooming with mouse scroll when the user clicks the map
+	$('.map').on('click', onMapClickHandler);
+	</script>
 
-</body>
+	</body>
 
-</html>
+	</html>
 
-
-"""
+	"""
+		miGenerador = Generador()
+        archivo = open("nombres.txt", "r")	
+		tabla = miGenerador.Tabla(archivo)
+		return html1 + tabla + html2
 
 if __name__ == '__main__':
     conf = {
@@ -159,6 +165,6 @@ if __name__ == '__main__':
             'tools.staticdir.dir': './public'
         }
     }
-    cherrypy.config.update({'server.socket_host': '0.0.0.0', })
+    cherrypy.config.update({'server.socket_host': '127.0.0.1', })
     cherrypy.config.update({'server.socket_port': int(os.environ.get('PORT', '5000')), })
     cherrypy.quickstart(goodAndDevil(), '/', conf)
