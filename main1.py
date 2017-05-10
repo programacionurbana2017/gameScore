@@ -3,20 +3,18 @@ import cherrypy,os
 
 
 class goodAndDevil(object):
-	@cherrypy.expose
-	def index(self):
-		text = '''
+    @cherrypy.expose
+    def index(self):
+		html = '''
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
-	<link rel="stylesheet" href="static/css/student.css"> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>G&D</title>
-
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/stylish-portfolio.css" rel="stylesheet">
     <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -49,15 +47,13 @@ class goodAndDevil(object):
 
         
 	'''
-		text1 = """<!-- About -->
+        html1 = """<!-- About -->
         <section id="about" class="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                    """    
-		text2 = """				
-					
-                      
+                        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                        <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
                     </div>
                 </div>
                 <!-- /.row -->
@@ -153,10 +149,11 @@ class goodAndDevil(object):
 	</html>
 
 	"""
-		migenerador = Generador()
-		archivo = open("nombres.txt","r")
-		tabla = migenerador.Tabla(archivo)
-		return text + text1 + tabla + text2
+		miGenerador = Generador()
+        archivo = open("nombres.txt", "r")	
+		tabla = miGenerador.Tabla(archivo)
+		return html1 + tabla + html2
+
 if __name__ == '__main__':
     conf = {
         '/': {

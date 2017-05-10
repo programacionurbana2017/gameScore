@@ -12,13 +12,22 @@ class Generador:
 		return  codigo
 	
 	def Tabla(self,tabla):
+		tabla1 = '''	<tr class="titulo">
+			
+			<td class="titulo1">NOMBRE</td>
+			<td class="titulo1">PUNTUACION</td>
+			<td class="titulo1">TIEMPO JUGADO</td></tr>'''
 		codigo = ""
 		for i in tabla:
-			codigo = codigo + "<tr>"		
+			codigo = codigo + '''<tr class ="">'''		
 			for j in i.split(","):
-				 codigo = codigo + "<td>" + j +  "</td>" 
+				 codigo = codigo + '''<td class="">''' + j +  "</td>" 
 		codigo = codigo + "</tr>"
-		codigo = "<table>"+codigo +"</table>"
+		codigo = '''  <table class="tabla">''' + tabla1 +codigo +"</table>"
 		return codigo
+		
+		
+		
+
 
 

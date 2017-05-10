@@ -1,0 +1,41 @@
+table.tabla {
+	position: absolute;
+    top: 1px;
+    left: 5px;
+	color: black;
+    width: 98%;
+	height: 150px;
+	padding: 10px;  /* Para controlar el espacio entre el borde y el contenido de una tabla */
+	text-align: center; /* left, right, or center */
+	border: 10px solid #FFB907;
+	
+
+}
+
+th, td {
+	
+
+	padding: 15px;  
+	vertical-align: top;      /*top, bottom, or middle */
+	border-bottom: 1px solid #FFB907;
+	
+}
+
+tr:nth-child(even){
+background-color: #f2f2f2}
+
+tr.titulo{
+    background-color: #FFB907;
+    color: #3A3A38 ;
+}
+
+td.titulo{
+	background-color: white;
+}	
+
+td.titulo1{
+	font-size: 25px;
+	text-decoration: none;
+	color: #3A3A38;
+	font-family: impact;
+}	
