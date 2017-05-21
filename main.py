@@ -51,8 +51,8 @@ class goodAndDevil(object):
 	'''
 		text1 = """<!-- About -->
         <section id="about" class="about">
-            <div class="container">
-                <div class="row">
+            <div >
+                <div>
                     <div class="col-lg-12 text-center">
                     """    
 		text2 = """				

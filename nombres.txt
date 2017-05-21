@@ -1,5 +1,5 @@
-heber,vladimir,vladimir
-vladimir,vladimir,vladimir
-josefina,vladimir,vladimir
-alberto,vladimir,vladimir
-juan,vladimir,vladimir
+Juan,1235112,121223,Español
+Sanez,1235112,121223,Turco
+Lucho,1235112,121223,Argentino
+Bryan,324324234,42342342,Italiano
+Carlos,4345343,56151,Colombiano
