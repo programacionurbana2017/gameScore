@@ -1,20 +1,9 @@
 class Generador:
-	def titulo(self,titulo,parrafo):
-		titulo = "<h1>" + titulo + "</h1>"
-		parrafo = "<p>" + parrafo + "</p>"
-		return titulo+parrafo
-			
-	def Lista(self,lista):
-		codigo = ""
-		for i in lista:
-			codigo = codigo + "<li>" +i+ "</li>"		
-		codigo = "<ol>" + codigo + "</ol>"
-		return  codigo
-	
+
 	def Tabla(self,tabla):
 		contador = 1
 		tabla1 = '''	<tr class="titulo1">
-			<td class="titulo1">POSICION</td>
+			<td  class="titulo1">POSICION</td>
 			<td class="titulo1" >NOMBRE</td>
 			<td class="titulo1">PUNTUACION</td>
 			<td class="titulo1">TIEMPO JUGADO</td>
@@ -38,15 +27,15 @@ class Generador:
 			
 			for j in i.split(","):
 				if contador == 1:
-					codigo = codigo + '''<td class="posicionuno">''' + j +  "</td>"
+					codigo = codigo + '''<td class="posicionuno" onmouseover="agrandar()"  onmouseout="encojer()" id="titulo">''' + j +  "</td>"
 				else:
 					if contador == 2:
-						codigo = codigo + '''<td class="posiciondos">''' + j +  "</td>"
+						codigo = codigo + '''<td class="posiciondos" onmouseover="agrandar1()"  onmouseout="encojer1()" id="titulo1">''' + j +  "</td>"
 					else:
 						if contador == 3:
-							codigo = codigo + '''<td class="posiciontres">''' + j +  "</td>"
+							codigo = codigo + '''<td class="posiciontres" onmouseover="agrandar2()"  onmouseout="encojer2()" id="titulo2">''' + j +  "</td>"
 						else:	
-							codigo = codigo + '''<td class="comun">''' + j +  "</td>" 
+							codigo = codigo + '''<td class="comun" onmouseover="agrandar()"  onmouseout="encojer()" id="titulo">''' + j +  "</td>" 
 			
 			contador = contador + 1	 
 		codigo = codigo + "</tr>"

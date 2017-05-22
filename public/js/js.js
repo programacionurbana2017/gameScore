@@ -1,4 +1,4 @@
-function myFunction() {
-   document.getElementById("demo").innerHTML = "Paragraph changed.";
+function agrandar() {
+   document.getElementById("titulo").innerHTML = "Paragraph changed.";
 }
 

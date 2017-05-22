@@ -9,7 +9,7 @@ class goodAndDevil(object):
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
-	<script src="static/js/js.js"></script>
+	<script src="static/js/java.js"></script>
 	<link rel="stylesheet" href="static/css/student1.css"> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
