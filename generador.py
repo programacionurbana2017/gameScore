@@ -7,7 +7,8 @@ class Generador:
 			<td class="titulo1" >NOMBRE</td>
 			<td class="titulo1">PUNTUACION</td>
 			<td class="titulo1">TIEMPO JUGADO</td>
-			<td class="titulo1">NACIONALIDAD</td></tr>'''
+			<td class="titulo1">NACIONALIDAD</td>
+			<td class="titulo1"></td></tr>'''
 		codigo = ""
 		for i in tabla:
 			if contador == 1:
@@ -37,6 +38,19 @@ class Generador:
 						else:	
 							codigo = codigo + '''<td class="comun" onmouseover="agrandar()"  onmouseout="encojer()" id="titulo">''' + j +  "</td>" 
 			
+			if contador == 1:				
+				codigo = codigo + ''' <td class = "posicionuno"> ''' + '''<img SRC="1.jpg" style="width:20px;height:20px;">''' + '''.</td></tr>'''
+			else:
+				if contador == 2:
+				
+					codigo = codigo + ''' <td class = "posiciondos"> ''' + '''<img SRC="2.jpg" style="width:10px;height:10px;">''' + '''.</td></tr>'''
+				else:
+					if contador == 3:
+					
+						codigo = codigo + ''' <td class = "posiciontres"> ''' + '''<img SRC="3.jpg" style="width:10px;height:10px;">''' + '''.</td></tr>'''
+					else:
+					
+						codigo = codigo + ''' <td class="comun"> ''' + '''<img SRC="comun.jpg" style="width:10px;height:10px;">''' + '''.</td></tr>'''
 			contador = contador + 1	 
 		codigo = codigo + "</tr>"
 		codigo = '''  <table class="tabla">''' + tabla1 +codigo +"</table>"
