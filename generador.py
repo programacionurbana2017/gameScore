@@ -39,18 +39,18 @@ class Generador:
 							codigo = codigo + '''<td class="comun" onmouseover="agrandar()"  onmouseout="encojer()" id="titulo">''' + j +  "</td>" 
 			
 			if contador == 1:				
-				codigo = codigo + ''' <td class = "posicionuno"> ''' + '''<img SRC="1.jpg" style="width:20px;height:20px;">''' + '''.</td></tr>'''
+				codigo = codigo + ''' <td class = "posicionuno"> ''' + '''<img src="/static/img/n1.png" style="width:40px;height:40px;">''' + '''.</td></tr>'''
 			else:
 				if contador == 2:
 				
-					codigo = codigo + ''' <td class = "posiciondos"> ''' + '''<img SRC="2.jpg" style="width:10px;height:10px;">''' + '''.</td></tr>'''
+					codigo = codigo + ''' <td class = "posiciondos"> ''' + '''<img SRC="/static/img/n2.png" style="height:40px;">''' + '''.</td></tr>'''
 				else:
 					if contador == 3:
 					
-						codigo = codigo + ''' <td class = "posiciontres"> ''' + '''<img SRC="3.jpg" style="width:10px;height:10px;">''' + '''.</td></tr>'''
+						codigo = codigo + ''' <td class = "posiciontres"> ''' + '''<img SRC="/static/img/n3.png" style="height:40px;">''' + '''.</td></tr>'''
 					else:
 					
-						codigo = codigo + ''' <td class="comun"> ''' + '''<img SRC="comun.jpg" style="width:10px;height:10px;">''' + '''.</td></tr>'''
+						codigo = codigo + ''' <td class="comun"> ''' + '''<img SRC="/static/img/n4.png" style="height:30px;">''' + '''.</td></tr>'''
 			contador = contador + 1	 
 		codigo = codigo + "</tr>"
 		codigo = '''  <table class="tabla">''' + tabla1 +codigo +"</table>"

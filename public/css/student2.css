@@ -1,0 +1,42 @@
+th, td.posicionuno{
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color:  #D0870;
+    color: #ffffff;
+	font-size: 25px;
+	text-decoration: none;
+	color: #FFFD5F;
+	font-family: impact;
+}
+th, td.posicionuno:hover {
+    background-color:  #D0870;
+
+}
+
+th, td.posiciondos{
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #900404;
+    color: #ffffff;
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+	font-family: impact;
+}
+th, td.posiciondos:hover {
+    background-color: #BA0505;
+}
+
+th, td.posiciontres{
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #001C55;
+    color: #ffffff;
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+	font-family: impact;
+}
+th, td.posiciontres:hover {
+    background-color: #003AAD;
+}
