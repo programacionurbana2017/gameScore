@@ -2,6 +2,7 @@ class Generador:
 
 	def Tabla(self,tabla):
 		contador = 1
+		aux = 1
 		tabla1 = '''	<tr class="titulo1">
 			<td  class="titulo1">POSICION</td>
 			<td class="titulo1" >NOMBRE</td>
@@ -13,7 +14,7 @@ class Generador:
 		for i in tabla:
 			if contador == 1:
 				codigo = codigo + '''<tr>'''
-				codigo = codigo + ''' <td class = "posicionuno"> ''' + str(contador) + '''.</td>'''
+				codigo = codigo + ''' <td class = "posicionuno">''' + str(contador) + '''.</td>'''
 			else:
 				if contador == 2:
 					codigo = codigo + '''<tr>'''
@@ -28,29 +29,42 @@ class Generador:
 			
 			for j in i.split(","):
 				if contador == 1:
-					codigo = codigo + '''<td class="posicionuno" onmouseover="agrandar()"  onmouseout="encojer()" id="titulo">''' + j +  "</td>"
+					if aux == 1:
+						codigo = codigo + '''<td class="posicionuno" >'''+ '''<div class="divuno" id="div1" onclick="clic()" onmouseover="agrandar()"  onmouseout="encojer()">''' + j +  "</div></td>"
+						aux = aux + 1
+					else:
+						codigo = codigo + '''<td class="posicionuno" >'''+ '''<div class="divuno">''' + j +  "</div></td>"
 				else:
 					if contador == 2:
-						codigo = codigo + '''<td class="posiciondos" onmouseover="agrandar1()"  onmouseout="encojer1()" id="titulo1">''' + j +  "</td>"
+						if aux == 2:
+							 codigo = codigo + '''<td class="posiciondos" >'''+ '''<div class="divdos" id="div2" onmouseover="agrandar1()"  onmouseout="encojer1()">''' + j +  "</div></td>"
+							 aux = aux + 1
+						else:
+							codigo = codigo + '''<td class="posiciondos" id="titulo1">'''+ '''<div class="divdos">''' + j +  "</div></td>"
 					else:
 						if contador == 3:
-							codigo = codigo + '''<td class="posiciontres" onmouseover="agrandar2()"  onmouseout="encojer2()" id="titulo2">''' + j +  "</td>"
+							if aux == 3:
+								codigo = codigo + '''<td class="posiciontres" >''' + '''<div class="divtres" id="div3" onmouseover="agrandar2()"  onmouseout="encojer2()">''' + j +  "</div></td>"
+								aux = aux + 1
+							else:
+								codigo = codigo + '''<td class="posiciontres" >''' + '''<div class="divtres" id="div3">''' + j +  "</div></td>"
+								
 						else:	
-							codigo = codigo + '''<td class="comun" onmouseover="agrandar()"  onmouseout="encojer()" id="titulo">''' + j +  "</td>" 
+							codigo = codigo + '''<td class="comun" onmouseover="agrandarcomun()"  onmouseout="encojercomun()" id="comun1">''' + j +  "</td>" 
 			
 			if contador == 1:				
-				codigo = codigo + ''' <td class = "posicionuno"> ''' + '''<img src="/static/img/n1.png" style="width:40px;height:40px;">''' + '''.</td></tr>'''
+				codigo = codigo + ''' <td class = "posicionuno"> ''' + '''<img src="/static/img/n1.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 			else:
 				if contador == 2:
 				
-					codigo = codigo + ''' <td class = "posiciondos"> ''' + '''<img SRC="/static/img/n2.png" style="height:40px;">''' + '''.</td></tr>'''
+					codigo = codigo + ''' <td class = "posiciondos"> ''' + '''<img SRC="/static/img/n2.png" style="height:40px;">''' + '''</td></tr>'''
 				else:
 					if contador == 3:
 					
-						codigo = codigo + ''' <td class = "posiciontres"> ''' + '''<img SRC="/static/img/n3.png" style="height:40px;">''' + '''.</td></tr>'''
+						codigo = codigo + ''' <td class = "posiciontres"> ''' + '''<img SRC="/static/img/n3.png" style="height:40px;">''' + '''</td></tr>'''
 					else:
 					
-						codigo = codigo + ''' <td class="comun"> ''' + '''<img SRC="/static/img/n4.png" style="height:30px;">''' + '''.</td></tr>'''
+						codigo = codigo + ''' <td class="comun"> ''' + '''<img SRC="/static/img/n4.png" style="height:30px;">''' + '''</td></tr>'''
 			contador = contador + 1	 
 		codigo = codigo + "</tr>"
 		codigo = '''  <table class="tabla">''' + tabla1 +codigo +"</table>"

@@ -22,5 +22,8 @@ function encojer2() {
    document.getElementById("titulo2").style.fontSize = "25px";
 }
 
-
+function appendText() {
+    var txt1 = '''<div id="div1"	class="demo">Hello world!</div>''' ;              // Create text with HTML
+       $("body").append(txt1);     // Append new elements
+}
 

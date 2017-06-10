@@ -1,3 +1,17 @@
+div.demo{
+      position: absolute;
+    top: 800px;
+    right: 10px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: #2F0066;
+	height: 60px;
+	width: 350px;
+	margin: auto;
+	text-align: center;
+	 
+}
+
 th, td.titulo1 {
     padding: 8px;
     margin-bottom: 8px;
@@ -62,7 +76,6 @@ th, td.comun{
 	text-decoration: none;
 	color: white;
 	font-family: impact;
-	font-size: 25px;
 }
 th, td.comun:hover {
     background-color: #919191;
@@ -100,73 +113,5 @@ background-color: #f2f2f2
 
 }
 
-
-
-div.demo{
-
-    top: 820px;
-    left: 300px;
-    border-radius: 5px;
-	border: 2px solid #3A3A38;
-	background-color: #2F0066;
-	height: 400px;
-	width: 350px;
-	margin: auto;
-	text-align: center;
-
-	
-}
-
-div.cerrar{
-    top: 2px;
-    right: 2px;
-    border-radius: 5px;
-	border: 2px solid #3A3A38;
-	background-color: Red;
-	height: 30px;
-	width: 30px;
-	margin: auto;
-	text-align: center;
-	 
-}
-
-div.divuno{
-  
-    height: 100px;
-    border-radius: 5px;
-	border: 2px solid #3A3A38;
-	background-color: #FFB907;
-	height: 60px;
-	width: 350px;
-	margin: auto;
-	text-align: center;
-
-}
-
-div.divdos{
-  
-    height: 100px;
-    border-radius: 5px;
-	border: 2px solid #3A3A38;
-	background-color: #FFB907;
-	height: 60px;
-	width: 350px;
-	margin: auto;
-	text-align: center;
-
-}
-
-div.divtres{
-  
-    height: 100px;
-    border-radius: 5px;
-	border: 2px solid #3A3A38;
-	background-color: #FFB907;
-	height: 60px;
-	width: 350px;
-	margin: auto;
-	text-align: center;
-
-}
 
 

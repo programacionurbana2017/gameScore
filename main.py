@@ -9,8 +9,10 @@ class goodAndDevil(object):
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
-	<script src="static/js/java.js"></script>
-	<link rel="stylesheet" href="static/css/stu.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="static/js/jav.js"></script>
+	<link rel="stylesheet" href="static/css/stu.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,11 +63,16 @@ class goodAndDevil(object):
 					
                       
                     </div>
+						
                 </div>
                 <!-- /.row -->
             </div>
             <!-- /.container -->
         </section>
+		
+	 <div id="demo"	class="demo">Hello world! 
+	<div id="cerrar" class="cerrar" onclick="clic1()"> 	x </div>
+	</div>
 
 
 
