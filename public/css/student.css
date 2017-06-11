@@ -3,10 +3,10 @@ th, td.titulo1 {
     margin-bottom: 8px;
     background-color: rgba(63,63,63,0.7);
     color: #ffffff;
-	font-size: 30px;
+	font-size: 55px;
 	text-decoration: none;
 	color: white;
-	font-family: arial;
+	font-family: Kingdom Hearts;
 }
 
 
@@ -15,10 +15,10 @@ th, td.posicionuno{
     margin-bottom: 8px;
     background-color: #900404;
     color: #ffffff;
-	font-size: 25px;
+	font-size: 30px;
 	text-decoration: none;
 	color: white;
-	font-family: arial;
+	font-family: Hoffmann;
 }
 th, td.posicionuno:hover {
     background-color: #FFA600;
@@ -30,10 +30,10 @@ th, td.posiciondos{
     margin-bottom: 8px;
     background-color: #900404;
     color: #ffffff;
-	font-size: 25px;
+	font-size: 30px;
 	text-decoration: none;
 	color: white;
-	font-family: impact;
+	font-family: Hoffmann;
 }
 th, td.posiciondos:hover {
     background-color: #BA0505;
@@ -44,10 +44,10 @@ th, td.posiciontres{
     margin-bottom: 8px;
     background-color: #001C55;
     color: #ffffff;
-	font-size: 25px;
+	font-size: 30px;
 	text-decoration: none;
 	color: white;
-	font-family: impact;
+	font-family: Hoffmann;
 }
 th, td.posiciontres:hover {
     background-color: #003AAD;
@@ -99,8 +99,6 @@ tr:nth-child(even){
 background-color: #f2f2f2
 
 }
-
-
 
 div.demo{
 
@@ -168,5 +166,7 @@ div.divtres{
 	text-align: center;
 
 }
+
+
 
 

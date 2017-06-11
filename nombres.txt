@@ -1,10 +1,10 @@
-﻿Juan,1235112,121223,Español
-Sanez,1235112,121223,Turco
-Lucho,1235112,121223,Argentino
-Bryan,324324234,42342342,Italiano
-Carlos,4345343,56151,Colombiano
-Otro,Otro,0tro,Otro
-Otro,Otro,0tro,Otro
-Otro,Otro,0tro,Otro
-Otro,Otro,0tro,Otro
-Otro,Otro,0tro,Otro
+﻿Aniquilador,1235112,121223,Chileno
+Turcoman,1235112,121223,Turco
+Vladi,1235112,121223,Argentino
+El Bryan,324324234,42342342,Italiano
+Cejas,4345343,56151,Colombiano
+Sombra,5151310,6513513,Hatiano
+Muelas,812181,51685685168,Colombiano
+Kakaroto,512033,513515,Namekuense
+Matilda,12163,511351385,Estadounidense
+Tula,515131,16864681,Farlandia

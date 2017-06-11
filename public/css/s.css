@@ -3,10 +3,10 @@ th, td.titulo1 {
     margin-bottom: 8px;
     background-color: rgba(63,63,63,0.7);
     color: #ffffff;
-	font-size: 30px;
+	font-size: 55px;
 	text-decoration: none;
 	color: white;
-	font-family: arial;
+	font-family: Kingdom Hearts;
 }
 
 
@@ -15,10 +15,10 @@ th, td.posicionuno{
     margin-bottom: 8px;
     background-color: #900404;
     color: #ffffff;
-	font-size: 25px;
+	font-size: 30px;
 	text-decoration: none;
 	color: white;
-	font-family: arial;
+	font-family: Showcard Gothic;
 }
 th, td.posicionuno:hover {
     background-color: #FFA600;
@@ -30,10 +30,10 @@ th, td.posiciondos{
     margin-bottom: 8px;
     background-color: #900404;
     color: #ffffff;
-	font-size: 25px;
+	font-size: 30px;
 	text-decoration: none;
 	color: white;
-	font-family: impact;
+	font-family: Showcard Gothic;
 }
 th, td.posiciondos:hover {
     background-color: #BA0505;
@@ -44,10 +44,10 @@ th, td.posiciontres{
     margin-bottom: 8px;
     background-color: #001C55;
     color: #ffffff;
-	font-size: 25px;
+	font-size: 30px;
 	text-decoration: none;
 	color: white;
-	font-family: impact;
+	font-family: Showcard Gothic;
 }
 th, td.posiciontres:hover {
     background-color: #003AAD;
@@ -61,7 +61,7 @@ th, td.comun{
 	font-size: 15px;
 	text-decoration: none;
 	color: white;
-	font-family: impact;
+	font-family: Ravie;
 	font-size: 25px;
 }
 th, td.comun:hover {
@@ -100,17 +100,43 @@ background-color: #f2f2f2
 
 }
 
-
-
 div.demo{
-
-    top: 820px;
-    left: 300px;
+    top: 350px;
+    left: 540px;
     border-radius: 5px;
 	border: 2px solid #3A3A38;
 	background-color: #2F0066;
-	height: 400px;
-	width: 350px;
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	text-align: center;
+
+	
+}
+
+div.demo1{
+    top: 450px;
+    left: 540px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: #2F0066;
+	height: 350px;
+	width: 400px;
+	margin: auto;
+	text-align: center;
+
+	
+}
+
+div.demo2{
+
+    top: 540px;
+    left: 540px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: #2F0066;
+	height: 20px;
+	width: 20px;
 	margin: auto;
 	text-align: center;
 
@@ -118,6 +144,30 @@ div.demo{
 }
 
 div.cerrar{
+    top: 2px;
+    right: 2px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: Red;
+	height: 30px;
+	width: 30px;
+	margin: auto;
+	text-align: center;
+	 
+}
+div.cerrar1{
+    top: 2px;
+    right: 2px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: Red;
+	height: 30px;
+	width: 30px;
+	margin: auto;
+	text-align: center;
+	 
+}
+div.cerrar2{
     top: 2px;
     right: 2px;
     border-radius: 5px;
@@ -168,5 +218,7 @@ div.divtres{
 	text-align: center;
 
 }
+
+
 
 
