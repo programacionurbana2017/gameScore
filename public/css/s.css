@@ -80,8 +80,9 @@ table.tabla {
 	height: 150px;
 	padding: 10px;  /* Para controlar el espacio entre el borde y el contenido de una tabla */
 	text-align: center; /* left, right, or center */
-	border: 1px solid #00394E;
+	border: 1px solid #D39523;
 	background-image:url(bg.jpg); 
+	
 
 }
 
@@ -233,6 +234,9 @@ div.divcomun{
 	margin: auto;
 	text-align: center;
 
+}
+form{
+	text-align: left ;
 }
 
 

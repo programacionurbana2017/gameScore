@@ -67,9 +67,9 @@ class Generador:
 						codigo = codigo + ''' <td class="comun"> ''' + '''<img SRC="/static/img/n4.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 			contador = contador + 1	 
 		codigo = codigo + "</tr>"
-		codigo = '''<form>
-		 <input id="searchTerm" type="text" onkeyup="doSearch()" />
-	</form>''' + '''<table class="tabla" id="tabla">''' + tabla1 +codigo +"</table>"
+		codigo = ''' <form >
+		  <input id="searchTerm" style="text-align:center;border-color:#D39523;" "placeholder="BUSCAR" type="text" onkeyup="doSearch()" />	</form>
+''' + '''<table class="tabla" id="tabla">''' + tabla1 +codigo +"</table>"
 		return codigo
 		
 		
