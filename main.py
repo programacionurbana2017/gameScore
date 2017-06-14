@@ -26,6 +26,44 @@ class goodAndDevil(object):
 	</head>
 
 	<body>
+
+
+    
+    <script language="javascript">
+        function doSearch()
+        {
+            var tableReg = document.getElementById('tabla');
+            var searchText = document.getElementById('searchTerm').value.toLowerCase();
+            var cellsOfRow="";
+            var found=false;
+            var compareWith="";
+ 
+            for (var i = 1; i < tableReg.rows.length; i++)
+            {
+                cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
+                found = false;
+                
+                for (var j = 0; j < cellsOfRow.length && !found; j++)
+                {
+                    compareWith = cellsOfRow[j].innerHTML.toLowerCase();
+                    if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1))
+                    {
+                        found = true;
+                    }
+                }
+                if(found)
+                {
+                    tableReg.rows[i].style.display = '';
+                } else {
+                    
+                    tableReg.rows[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+
+
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">

@@ -13,7 +13,7 @@ th, td.titulo1 {
 th, td.posicionuno{
     padding: 8px;
     margin-bottom: 8px;
-    background-color: #900404;
+    background-color: rgba(63,63,63,0.7);
     color: #ffffff;
 	font-size: 30px;
 	text-decoration: none;
@@ -21,14 +21,15 @@ th, td.posicionuno{
 	font-family: Showcard Gothic;
 }
 th, td.posicionuno:hover {
-    background-color: #FFA600;
+    background-color: rgba(91, 80, 79, 0.5);
+    border : 2px solid #D39523  ;
 
 }
 
 th, td.posiciondos{
     padding: 8px;
     margin-bottom: 8px;
-    background-color: #900404;
+    background-color: rgba(63,63,63,0.7);
     color: #ffffff;
 	font-size: 30px;
 	text-decoration: none;
@@ -36,13 +37,14 @@ th, td.posiciondos{
 	font-family: Showcard Gothic;
 }
 th, td.posiciondos:hover {
-    background-color: #BA0505;
+    background-color: rgba(91, 80, 79, 0.5);
+    border : 2px solid #D39523;
 }
 
 th, td.posiciontres{
     padding: 8px;
     margin-bottom: 8px;
-    background-color: #001C55;
+    background-color: rgba(63,63,63,0.7);
     color: #ffffff;
 	font-size: 30px;
 	text-decoration: none;
@@ -50,7 +52,8 @@ th, td.posiciontres{
 	font-family: Showcard Gothic;
 }
 th, td.posiciontres:hover {
-    background-color: #003AAD;
+    background-color: rgba(91, 80, 79, 0.5);
+    border : 2px solid #D39523;
 }
 
 th, td.comun{
@@ -65,7 +68,8 @@ th, td.comun{
 	font-size: 25px;
 }
 th, td.comun:hover {
-    background-color: #919191;
+    background-color: rgba(91, 80, 79, 0.5);
+    border : 2px solid #D39523;
 }
 
 table.tabla {
@@ -95,7 +99,7 @@ th, td {
 	
 }
 
-tr:nth-child(even){
+tr:(even){
 background-color: #f2f2f2
 
 }
@@ -105,7 +109,7 @@ div.demo{
     left: 540px;
     border-radius: 5px;
 	border: 2px solid #3A3A38;
-	background-color: #2F0066;
+	background-color: rgba(16,15,15,0.7);
 	height: 20px;
 	width: 20px;
 	margin: auto;
@@ -118,8 +122,8 @@ div.demo1{
     top: 450px;
     left: 540px;
     border-radius: 5px;
-	border: 2px solid #3A3A38;
-	background-color: #2F0066;
+	border: 1px solid #3A3A38;
+	background-color: rgba(16,15,15,0.7);
 	height: 350px;
 	width: 400px;
 	margin: auto;
@@ -133,8 +137,8 @@ div.demo2{
     top: 540px;
     left: 540px;
     border-radius: 5px;
-	border: 2px solid #3A3A38;
-	background-color: #2F0066;
+	border: 1px solid #3A3A38;
+	background-color: rgba(16,15,15,0.7);
 	height: 20px;
 	width: 20px;
 	margin: auto;
@@ -147,7 +151,7 @@ div.cerrar{
     top: 2px;
     right: 2px;
     border-radius: 5px;
-	border: 2px solid #3A3A38;
+	border: 1px solid #3A3A38;
 	background-color: Red;
 	height: 30px;
 	width: 30px;
@@ -185,7 +189,7 @@ div.divuno{
     height: 100px;
     border-radius: 5px;
 	border: 2px solid #3A3A38;
-	background-color: #FFB907;
+	background-color: rgba(16,15,15,0.5);
 	height: 60px;
 	width: 350px;
 	margin: auto;
@@ -198,10 +202,10 @@ div.divdos{
     height: 100px;
     border-radius: 5px;
 	border: 2px solid #3A3A38;
-	background-color: #FFB907;
+	background-color: rgba(16,15,15,0.5);
 	height: 60px;
 	width: 350px;
-	margin: auto;
+	margin: auto ;
 	text-align: center;
 
 }
@@ -211,7 +215,19 @@ div.divtres{
     height: 100px;
     border-radius: 5px;
 	border: 2px solid #3A3A38;
-	background-color: #FFB907;
+	background-color: rgba(16,15,15,0.5);
+	height: 60px;
+	width: 350px;
+	margin: auto;
+	text-align: center;
+
+}
+
+div.divcomun{
+	height: 100px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: rgba(16,15,15,0.5);
 	height: 60px;
 	width: 350px;
 	margin: auto;

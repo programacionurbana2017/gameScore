@@ -50,24 +50,26 @@ class Generador:
 								codigo = codigo + '''<td class="posiciontres" >''' + '''<div class="divtres" id="div3">''' + j +  "</div></td>"
 								
 						else:	
-							codigo = codigo + '''<td class="comun" onmouseover="agrandarcomun()"  onmouseout="encojercomun()" id="comun1">''' + j +  "</td>" 
+							codigo = codigo + '''<td class="comun" onmouseover="agrandarcomun()"  onmouseout="encojercomun()" id="comun1">''' +'''<div class="divcomun" id="div0">'''+ j +  "</div></td>" 
 			
 			if contador == 1:				
-				codigo = codigo + ''' <td class = "posicionuno"> ''' + '''<img src="/static/img/n1.png" style="width:80px;height:80px;">''' + '''</td></tr>'''
+				codigo = codigo + ''' <td class = "posicionuno"> ''' + '''<img src="/static/img/n1.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 			else:
 				if contador == 2:
 				
-					codigo = codigo + ''' <td class = "posiciondos"> ''' + '''<img SRC="/static/img/n2.png" style="width:70px;height:70px;">''' + '''</td></tr>'''
+					codigo = codigo + ''' <td class = "posiciondos"> ''' + '''<img SRC="/static/img/n2.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 				else:
 					if contador == 3:
 					
-						codigo = codigo + ''' <td class = "posiciontres"> ''' + '''<img SRC="/static/img/n3.png" style="width:60px;height:60px;">''' + '''</td></tr>'''
+						codigo = codigo + ''' <td class = "posiciontres"> ''' + '''<img SRC="/static/img/n3.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 					else:
 					
 						codigo = codigo + ''' <td class="comun"> ''' + '''<img SRC="/static/img/n4.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 			contador = contador + 1	 
 		codigo = codigo + "</tr>"
-		codigo = '''  <table class="tabla">''' + tabla1 +codigo +"</table>"
+		codigo = '''<form>
+		 <input id="searchTerm" type="text" onkeyup="doSearch()" />
+	</form>''' + '''<table class="tabla" id="tabla">''' + tabla1 +codigo +"</table>"
 		return codigo
 		
 		
