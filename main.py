@@ -11,7 +11,7 @@ class goodAndDevil(object):
 	<head>
 
 	<script src="static/js/jav.js"></script>
-	<link rel="stylesheet" href="static/css/s.css">
+	<link rel="stylesheet" href="static/css/st.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,20 +107,54 @@ class goodAndDevil(object):
             <!-- /.container -->
         </section>
 		
-	 <div id="demo"	class="demo">Hello world! 
+	 <div id="demo"	class="demo">
+	 <li>
+		<ul> Estadisticas </>
+		<ul> Partidas Jugadas : 10 </ul>
+		<ul> Experiencia : 1500 xp </ul>
+		<ul> Nivel: Destrozador </ul>
+		<ul> Tiempo Jugado : 10 Horas </ul>
+		<ul> Logros Conseguidos : 75/200 </ul>
+		<ul> Estrellas encontradas : 4/5</ul>
+		<ul> <img src="/static/img/rey3.png" style="width:250px;height:250px;"></ul>
+	</li>	
+		
 	<div id="cerrar" class="cerrar" onclick="clic1()"> 	x </div>
 	</div>
 	
-		 <div id="demo1"	class="demo1">Hello world! 
+		 <div id="demo1"	class="demo1">	 <li>
+		<ul> Estadisticas </>
+		<ul> Partidas Jugadas : 8 </ul>
+		<ul> Experiencia : 1300 xp </ul>
+		<ul> Nivel: Fulminante </ul>
+		<ul> Tiempo Jugado : 10 Horas </ul>
+		<ul> Logros Conseguidos : 40/200 </ul>
+		<ul> Estrellas encontradas : 3/5</ul>
+		<ul> <img src="/static/img/rey1.png" style="width:250px;height:250px;"></ul>
+	</li> 
+	
 	<div id="cerrar1" class="cerrar1" onclick="clic4()"> 	x </div>
 	</div>
 	
-		 <div id="demo2"	class="demo2">Hello world! 
+	
+		 <div id="demo2"	class="demo2">	
+			 <li>
+		<ul> Estadisticas </>
+		<ul> Partidas Jugadas : 7 </ul>
+		<ul> Experiencia : 1250 xp </ul>
+		<ul> Nivel: Arrasador </ul>
+		<ul> Tiempo Jugado : 11 Horas </ul>
+		<ul> Logros Conseguidos : 37/200 </ul>
+		<ul> Estrellas encontradas : 3/5</ul>
+		<ul> <img src="/static/img/rey.png" style="width:250px;height:250px;"></ul>
+	</li> 
 	<div id="cerrar2" class="cerrar2" onclick="clic5()"> 	x </div>
 	</div>
 
-
-
+	<div id="img1" class="log1" > <img src="/static/img/espadas.png" style="width:260px;height:260px;"></div>
+	<div id="img2" class="log2" > <img src="/static/img/espada1.png" style="width:260px;height:260px;"></div>
+	<div id="img3" class="log3" ><img src="/static/img/toma.png" style="width:260px;height:260px;"></div>
+	<div id="imgc" class="logc" ><img src="/static/img/cupido.png" style="width:260px;height:260px;"></div>
 
     <!-- jQuery -->
 	<script src="static/js/jquery.js"></script>

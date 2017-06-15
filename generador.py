@@ -53,18 +53,18 @@ class Generador:
 							codigo = codigo + '''<td class="comun" onmouseover="agrandarcomun()"  onmouseout="encojercomun()" id="comun1">''' +'''<div class="divcomun" id="div0">'''+ j +  "</div></td>" 
 			
 			if contador == 1:				
-				codigo = codigo + ''' <td class = "posicionuno"> ''' + '''<img src="/static/img/n1.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
+				codigo = codigo + ''' <td class = "posicionuno" onmouseover="aparecer1()"  onmouseout="desaparecer1()"> ''' + '''<img src="/static/img/n1.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 			else:
 				if contador == 2:
 				
-					codigo = codigo + ''' <td class = "posiciondos"> ''' + '''<img SRC="/static/img/n2.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
+					codigo = codigo + ''' <td class = "posiciondos" onmouseover="aparecer2()"  onmouseout="desaparecer2()"> ''' + '''<img SRC="/static/img/n2.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 				else:
 					if contador == 3:
 					
-						codigo = codigo + ''' <td class = "posiciontres"> ''' + '''<img SRC="/static/img/n3.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
+						codigo = codigo + ''' <td class = "posiciontres" onmouseover="aparecer3()"  onmouseout="desaparecer3()"> ''' + '''<img SRC="/static/img/n3.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 					else:
 					
-						codigo = codigo + ''' <td class="comun"> ''' + '''<img SRC="/static/img/n4.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
+						codigo = codigo + ''' <td class="comun" "posiciondos" onmouseover="aparecerc()"  onmouseout="desaparecerc()"> ''' + '''<img SRC="/static/img/n4.png" style="width:40px;height:40px;">''' + '''</td></tr>'''
 			contador = contador + 1	 
 		codigo = codigo + "</tr>"
 		codigo = ''' <form >

@@ -1,3 +1,7 @@
+
+img {
+	position: static;
+}
 th, td.titulo1 {
     padding: 8px;
     margin-bottom: 8px;
@@ -81,7 +85,7 @@ table.tabla {
 	padding: 10px;  /* Para controlar el espacio entre el borde y el contenido de una tabla */
 	text-align: center; /* left, right, or center */
 	border: 1px solid #D39523;
-	background-image:url(g.jpg); 
+	background-image:url(bg.jpg); 
 	
 
 }
@@ -131,7 +135,9 @@ div.demo1{
 	height: 20px;
 	width: 20px;
 	margin: auto;
-
+		color: white;
+	font-family: Showcard Gothic;
+	font-size: 20px;
 
 	
 }
@@ -146,7 +152,9 @@ div.demo2{
 	height: 20px;
 	width: 20px;
 	margin: auto;
-
+	color: white;
+	font-family: Showcard Gothic;
+	font-size: 20px;
 
 	
 }
@@ -157,9 +165,10 @@ div.cerrar{
     border-radius: 5px;
 	border: 1px solid #3A3A38;
 	background-color: Red;
-	height: 20px;
-	width: 20px;
+	height: 30px;
+	width: 30px;
 	margin: auto;
+	text-align: center ;
 
 	 
 }
@@ -172,6 +181,8 @@ div.cerrar1{
 	height: 30px;
 	width: 30px;
 	margin: auto;
+		text-align: center ;
+
 
 }
 div.cerrar2{
@@ -183,6 +194,8 @@ div.cerrar2{
 	height: 30px;
 	width: 30px;
 	margin: auto;
+		text-align: center ;
+
 
 	 
 }
@@ -239,6 +252,72 @@ div.divcomun{
 }
 form{
 	text-align: left ;
+}
+
+div.log1{
+
+    top: 1050px;
+    right: 2px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: rgba(16,15,15,0.7);
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	color: white;
+	font-family: Showcard Gothic;
+	text-align:center;
+
+
+	
+}
+div.log2{
+
+    top: 1150px;
+    right: 2px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: rgba(16,15,15,0.7);
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	color: white;
+	font-family: Showcard Gothic;
+text-align:center;
+
+	
+}
+div.log3{
+
+    top: 1250px;
+    right: 2px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: rgba(16,15,15,0.7);
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	color: white;
+	font-family: Showcard Gothic;
+text-align:center;
+
+	
+}
+div.logc{
+
+    top: 1450px;
+    right: 2px;
+    border-radius: 5px;
+	border: 2px solid #3A3A38;
+	background-color: rgba(16,15,15,0.7);
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	color: white;
+	font-family: Showcard Gothic;
+text-align:center;
+
+	
 }
 
 

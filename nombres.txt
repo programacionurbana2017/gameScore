@@ -8,3 +8,7 @@ Muelas,812181,51685685168,Colombiano
 Kakaroto,512033,513515,Namekuense
 Matilda,12163,511351385,Estadounidense
 Tula,515131,16864681,Farlandia
+Muelas,812181,51685685168,Colombiano
+Kakaroto,512033,513515,Namekuense
+Matilda,12163,511351385,Estadounidense
+Tula,515131,16864681,Farlandia
